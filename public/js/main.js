@@ -25,7 +25,7 @@ let remoteSession = {
 let localStreams = [];
 let localVideos = [];
 
-const socket = io("https://8eyfami53b.execute-api.eu-central-1.amazonaws.com"); // Assuming you have imported the socket.io library
+const socket = io("http://3.125.45.73"); // Assuming you have imported the socket.io library
 
 socket.on('message', (message) => {
   if (!localStreams.length) {

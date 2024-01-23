@@ -28,6 +28,11 @@ io.on('connection', (socket) => {
 
 });
 
+// Add / path for health check
+app.get('/', (req, res) => {
+    res.send('Hello World!');
+});
+
 // Start the server
 const port = 3001;
 http.listen(port, () => {
